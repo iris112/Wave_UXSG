@@ -1,0 +1,35 @@
+<div class="registeruser create-account">
+
+    <a class="waves-logo" ui-sref="welcome"></a>
+
+    <div class="text-center">
+        <div class="headline-1">
+            <span w-i18n="registeruser.registeruser"></span>
+        </div>
+
+        <div class="body-2 disabled-600">
+            <span w-i18n="registeruser.register"></span>
+            <a ui-sref="welcome" w-i18n="modal.prev"></a>
+        </div>
+    </div>
+
+    <hr>
+
+    <w-registeruser class="margin-2"
+                name="$ctrl.name"
+                fname="$ctrl.fname"
+                lname="$ctrl.lname"
+                email="$ctrl.email"
+                password="$ctrl.password"
+                on-submit="$ctrl.registerUser()">
+        <span w-i18n="button.continue"></span>
+    </w-registeruser>
+
+    <div class="or margin-2">
+        <span w-i18n="modal.or"></span>
+    </div>
+    <div class="text-center body-2 flex-column-center-min margin-2">
+        <a ui-sref="userlogin" w-i18n="registeruser.signin"></a>
+    </div>
+
+</div>

@@ -1,0 +1,32 @@
+<div class="userlogin create-account">
+
+    <a class="waves-logo" ui-sref="welcome"></a>
+
+    <div class="text-center">
+        <div class="headline-1">
+            <span w-i18n="userLogin.userLogin"></span>
+        </div>
+
+        <div class="body-2 disabled-600">
+            <span w-i18n="userLogin.login"></span>
+            <a ui-sref="welcome" w-i18n="modal.prev"></a>
+        </div>
+    </div>
+
+    <hr>
+
+    <w-loginpassword class="margin-2"
+                name="$ctrl.name"
+                password="$ctrl.password"
+                on-submit="$ctrl.userLogin()">
+        <span w-i18n="button.continue"></span>
+    </w-loginpassword>
+
+    <div class="or margin-2">
+        <span w-i18n="modal.or"></span>
+    </div>
+    <div class="text-center body-2 flex-column-center-min margin-2">
+        <a ui-sref="registeruser" w-i18n="userLogin.signUp"></a>
+    </div>
+
+</div>

@@ -1,0 +1,12 @@
+You will need Node.js 10.7.0 (or higher) and npm v5 (or higher).
+
+1. Unzip application into directory
+
+2. From terminal run the following commands to initialize the application inside the directory.
+npm i
+npm run data-service
+
+3. Run this command to start the application.
+npm run server
+
+The server will be launched at https://localhost:8080.

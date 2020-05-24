@@ -1,0 +1,12 @@
+<div ng-init="$ctrl.verifyuser()">
+<i class="icon-information"></i>
+<span ng-click="$ctrl.showTutorialModals()"
+      w-i18n-ns="app.welcome"
+      w-i18n="infoTooltip"
+      class="tooltip">
+</span>
+<w-change-language></w-change-language>
+<div ng-if="$ctrl.isLogin">
+<ng-include w-i18n-ns="app.userlogin" src="$ctrl.getDataUrl()"></ng-include>
+</div>
+</div>
